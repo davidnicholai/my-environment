@@ -1,0 +1,48 @@
+// Settings - User
+{
+	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"folder_exclude_patterns":
+	[
+		".git",
+		"mfcc",
+		"node_modules",
+		"out",
+		"plugins",
+		"public/lib",
+		"recordings",
+		"resources",
+		"www/lib"
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"menu_visible": false,
+	"predawn_sidebar_arrows": true,
+	"predawn_tabs_active_underline": true,
+	"predawn_tabs_medium": true,
+	"theme": "predawn-DEV.sublime-theme",
+	"word_wrap": false
+}
+
+// Key Bindings - User
+[
+	{ 
+		"keys": ["ctrl+alt+p"],
+		"command": "prompt_select_workspace"
+	}
+]
+
+// Packages
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Package Control",
+		"Predawn"
+	]
+}
