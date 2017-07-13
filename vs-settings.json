@@ -1,0 +1,46 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/lib": true
+    },
+    "git.path": "C:\\Users\\David\\Cmder\\vendor\\git-for-windows\\cmd\\git.exe",
+    "window.zoomLevel": 0,
+    "vim.easymotion": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.renderWhitespace": "all",
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before":["<C-n>"],
+            "after":[],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys":{
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "toggle"
+}
