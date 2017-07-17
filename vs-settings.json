@@ -11,25 +11,25 @@
     "editor.renderIndentGuides": false,
     // "editor.renderWhitespace": "all",
 
+    "workbench.colorTheme": "Monokai Dimmed",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": true,
 
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
 
+    "vim.useSystemClipboard": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j","j"],
             "after": ["<Esc>"]
         }
-    ]
-    // "vim.easymotion": true,
-    // "vim.disableAnnoyingNeovimMessage": true,
-    // "vim.incsearch": true,
-    // "vim.useSystemClipboard": true,
-    // "vim.useCtrlKeys": true,
-    // "vim.hlsearch": true,
+    ],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     // "vim.otherModesKeyBindingsNonRecursive": [
     //     {
     //         "before": ["<leader>","d"],
@@ -46,8 +46,11 @@
     //     }
     // ],
     // "vim.leader": "<space>",
-    // "vim.handleKeys":{
-    //     "<C-a>": false,
-    //     "<C-f>": false
-    // },
+    "vim.handleKeys":{
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-v>": false,
+        "<C-c>": false
+    }
 }
