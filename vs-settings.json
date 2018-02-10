@@ -1,25 +1,17 @@
-// Place your settings in this file to overwrite the default settings
 {
     "files.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
         "**/lib": true
     },
-
     "editor.fontSize": 12,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
-    // "editor.renderWhitespace": "all",
-
-    "workbench.colorTheme": "Monokai Dimmed",
-    "workbench.statusBar.visible": false,
+    "editor.renderWhitespace": "all",
+    "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
-
-    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
-
     "vim.useSystemClipboard": true,
-    "vim.disableAnnoyingNeovimMessage": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j","j"],
@@ -30,22 +22,30 @@
     "vim.incsearch": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    // "vim.otherModesKeyBindingsNonRecursive": [
-    //     {
-    //         "before": ["<leader>","d"],
-    //         "after": ["d", "d"]
-    //     },
-    //     {
-    //         "before":["<C-n>"],
-    //         "after":[],
-    //         "commands": [
-    //             {
-    //                 "command": ":nohl"
-    //             }
-    //         ]
-    //     }
-    // ],
-    // "vim.leader": "<space>",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","f"],
+            "after": ["<C-f>"]
+        },
+        {
+            "before": ["<leader>","b"],
+            "after": ["<C-b>"]
+        },
+        {
+            "before": ["<leader>","p"],
+            "after": ["\"", "0", "p"]
+        },
+        {
+            "before": ["<leader>","h"],
+            "after": [],
+            "commands": [
+                {
+                    "command": ":noh"
+                }
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
     "vim.handleKeys":{
         "<C-a>": false,
         "<C-f>": false,
