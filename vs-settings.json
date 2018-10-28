@@ -16,7 +16,7 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>","f"],
+            "before": ["<leader>","f" ],
             "after": ["<C-f>"]
         },
         {
