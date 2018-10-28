@@ -1,28 +1,20 @@
 {
-    "files.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/lib": true
-    },
-    "editor.fontSize": 12,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
-    "editor.renderWhitespace": "all",
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": true,
-    "window.zoomLevel": 0,
-    "vim.useSystemClipboard": true,
+    "editor.renderWhitespace": "none",
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Solarized Dark",
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j","j"],
-            "after": ["<Esc>"]
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+
         }
     ],
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>","f"],
             "after": ["<C-f>"]
@@ -44,13 +36,5 @@
                 }
             ]
         }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys":{
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-w>": false,
-        "<C-v>": false,
-        "<C-c>": false
-    }
+    ]
 }
