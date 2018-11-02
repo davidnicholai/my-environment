@@ -1,5 +1,5 @@
 // ===========
-// Keybindings
+// Keybindings from github.com/b-ggs/dotfiles
 // ===========
 
 var direction = {
