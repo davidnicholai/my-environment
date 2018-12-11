@@ -35,6 +35,14 @@
                     "command": ":noh"
                 }
             ]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "$", "A"]
+        },
+        {
+            "before": ["<leader>", "4"],
+            "after": ["$"]
         }
     ]
 }
