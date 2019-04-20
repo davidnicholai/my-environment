@@ -18,7 +18,8 @@ var bindings = {
       "left": direction.left,
       "right": direction.right,
       "up": direction.up,
-      "down": direction.down
+      "down": direction.down,
+      "center": "c"
     }
   },
   "focus": {
@@ -105,6 +106,12 @@ var operationParams = {
       "y": `screenOriginY + (screenSizeY / 2) + ${gap / 2} + ${offsets.top / 2} - ${offsets.bottom / 2}`,
       "height": `(screenSizeY / 2) - ${gap * 3 / 2} - ${offsets.top / 2} - ${offsets.bottom / 2}`,
       "width": "windowSizeX"
+    },
+    "center": {
+      "x": `screenOriginX + ((screenSizeX - windowSizeX) / 2)`,
+      "y": `screenOriginY + ((screenSizeY - windowSizeY) / 2)`,
+      "height": "windowSizeY",
+      "width": "windowSizeX"
     }
   },
   "focus": {
@@ -153,7 +160,8 @@ var operationActionHashes = [
       "left",
       "right",
       "up",
-      "down"
+      "down",
+      "center"
     ]
   },
   {
