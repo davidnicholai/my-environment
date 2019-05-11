@@ -49,7 +49,7 @@ var bindings = {
 // Offsets
 // =======
 
-var gap = 10;
+var gap = 40;
 var offsets = {
   "top": 0,
   "bottom": 0
