@@ -1,22 +1,25 @@
 {
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
-    "editor.renderWhitespace": "none",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "editor.fontSize": 12,
     "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "none",
     "workbench.colorTheme": "Solarized Dark",
     "vim.easymotion": true,
     "vim.hlsearch": true,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
     "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
             "after": ["<esc>"]
-
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>","f" ],
+            "before": ["<leader>","f"],
             "after": ["<C-f>"]
         },
         {
@@ -44,5 +47,17 @@
             "before": ["<leader>", "4"],
             "after": ["$"]
         }
-    ]
+    ],
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-b>": false,
+        "<C-a>": false,
+    },
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "editor.renderLineHighlight": "none",
 }
