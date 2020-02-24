@@ -10,3 +10,7 @@ Directory: `find . -type d -name 'DIRECTORY_NAME' -exec rm -r {} +`
 
 Scan directory and delete bin/obj directories
 `find . \( -name 'bin' -o -name 'obj' \) -type d -exec rm -r {} +`
+
+To synchronize files
+`rsync -av[n] SRC DEST`
+Adding `n` (dry-run) will print a list of files to be transferred
