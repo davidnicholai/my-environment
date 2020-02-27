@@ -60,4 +60,5 @@
         "**/node_modules": true
     },
     "editor.renderLineHighlight": "none",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
 }
