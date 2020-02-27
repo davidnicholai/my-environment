@@ -4,6 +4,7 @@
     "editor.fontSize": 12,
     "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "none",
+    "editor.tabSize": 2,
     "workbench.colorTheme": "Solarized Dark",
     "vim.easymotion": true,
     "vim.hlsearch": true,
@@ -55,10 +56,13 @@
         "<C-w>": false,
         "<C-b>": false,
         "<C-a>": false,
+        "<C-h>": false,
     },
     "files.exclude": {
         "**/node_modules": true
     },
     "editor.renderLineHighlight": "none",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "right",
 }
