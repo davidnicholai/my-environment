@@ -12,7 +12,7 @@ map <leader>h :noh<CR>
 map <leader>d d$A
 map <leader>4 $
 
-syntax enable
+"syntax enable
 "set background=dark
 "colorscheme solarized
 
