@@ -27,5 +27,13 @@
         "key": "alt+k",
         "command": "list.focusUp",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl++",
+        "command": "workbench.action.navigateForward"
     }
 ]
