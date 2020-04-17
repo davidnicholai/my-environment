@@ -36,6 +36,10 @@ else
 	echo Great! Zsh is already installed.
 fi
 
+# Git uses Nano as its default editor
+git config --global core.editor "vim"
+echo Assigned vim as git\'s default editor.
+
 ln -sf $DIR/vimrc ~/.vimrc
 echo Created a symlink for .vimrc
 
