@@ -16,7 +16,6 @@ map <leader>4 $
 "set background=dark
 "colorscheme solarized
 
-"call plug#begin('~/.vim/plugged')
-"Plug 'sheerun/vim-polyglot'
-"call plug#end()
-
+call plug#begin('~/.vim/plugged')
+Plug 'sheerun/vim-polyglot'
+call plug#end()
