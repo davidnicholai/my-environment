@@ -38,6 +38,8 @@ fi
 
 # Git uses Nano as its default editor
 git config --global core.editor "vim"
+git config --global user.name "David Lim"
+git config --global user.email "nicholai.david@gmail.com"
 echo Assigned vim as git\'s default editor.
 
 ln -sf $DIR/vimrc ~/.vimrc
