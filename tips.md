@@ -14,3 +14,6 @@ Scan directory and delete bin/obj directories
 To synchronize files
 `rsync -av[n] SRC DEST`
 Adding `n` (dry-run) will print a list of files to be transferred
+
+# Add SSH public key to remote server
+`ssh-copy-id -i /path/to/file [user@]ip_address`
