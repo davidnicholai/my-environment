@@ -36,6 +36,8 @@ Restart a service: `sudo systemctl [restart/stop/start] raspotify`
 Add SSH public key to remote server: `ssh-copy-id -i /path/to/file [user@]192.168.1.123`
 
 ## Docker
+Check out the `Dockerfile` in this repository if you need a reference.
+
 Build image from a Dockerfile: `docker build -t DESIRED_TAG_NAME .`
 
 Run your image: `docker run [-p 80:80] [-d/--detach] TAG_OF_BUILT_DOCKER_IMAGE`
