@@ -28,7 +28,12 @@ Restart a service: `sudo systemctl [restart/stop/start] raspotify`
 
 # Docker
 Build image from a Dockerfile: `docker build -t DESIRED_TAG_NAME .`
+
 Run your image: `docker run [-p 80:80] -d TAG_OF_BUILT_DOCKER_IMAGE
+
 Run command in image: `docker exec -it TAG_OF_BUILT_DOCKER_IMAGE bash`
+
 List running containers: `docker ps`
+
 Delete a Docker container: `docker rm TAG_OF_CONTAINER`
+
