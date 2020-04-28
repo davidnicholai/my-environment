@@ -1,18 +1,24 @@
 # This is a sample Dockerfile for future use.
 
-FROM node:12 # Required. The name of the image. You can get the list from Docker Hub.
+# Required. The name of the image. You can get the list from Docker Hub.
+FROM node:12 
 
-ENV PATH /usr/local/nginx/bin:$PATH # Updates the PATH environment.
+# Updates the PATH environment.
+ENV PATH /usr/local/nginx/bin:$PATH 
 
-COPY . /src #  Copy files to a certain location in your Docker image
+#  Copy files to a certain location in your Docker image
+COPY . /src 
 
-WORKDIR somefolder # Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, ADD instructions that follow. Always use the absolute paths for your workdir.
+# Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, ADD instructions that follow. Always use the absolute paths for your workdir.
+WORKDIR somefolder 
 
-RUN apt-get update && apt-get install -y \ # Run a command in the terminal. It's better to reduce layers by separating with a backslash
+# Run a command in the terminal. It's better to reduce layers by separating with a backslash
+RUN apt-get update && apt-get install -y \ 
 	package-bar \
 	package-foo
 
-EXPOSE 8080 # Expose ports if needed.
+# Expose ports if needed.
+EXPOSE 8080 
 
-CMD [ "executable", "param1", "param2" ] # CMD should be used to run the software contained in your image.
-
+# CMD should be used to run the software contained in your image.
+CMD [ "executable", "param1", "param2" ] 
