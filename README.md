@@ -1,10 +1,11 @@
-# Under Maintenance
+# David's Environment Configurations
 
-# Setup
-For now, install the following manually:
-* iTerm2 via Homebrew
-* tmux via Homebrew
-* oh-my-zsh
-* pygmalion oh-my-zsh theme
-* vim-plug from github.com/junegunn/vim-plug
-* solarized themes for vim and iTerm from github.com/altercation/solarized
+- debian-install.sh - Setup my configurations in a Debian environment (for my rpi and Ubuntu machines).
+- raspbian-install-docker.sh - A script to install Docker in my rpi.
+- ubuntu-install-docker.sh - A script to install Docker in my Ubuntu images.
+
+# Tips
+
+Any UNIX-related commands I will def forget in the future are listed below.
+
+
