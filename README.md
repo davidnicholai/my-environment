@@ -12,6 +12,7 @@ Any UNIX-related commands I will def forget in the future are listed below.
 - `Ctrl+W` to clear a word
 - `Ctrl+U` to clear everything you've typed
 - `Ctrl+L` to clear the Terminal
+- [oh-my-zsh cheat sheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
 
 ## Miscellaneous
 To delete all files/directories inside a directory
