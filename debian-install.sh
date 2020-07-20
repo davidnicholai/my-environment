@@ -57,4 +57,5 @@ echo Sourced .inputrc
 source ~/.bashrc
 echo Sourced .bashrc
 
-echo Done!
+echo Done! Run zsh or do a sudo reboot.
+
