@@ -16,7 +16,7 @@ sudo add-apt-repository \
         stable"
 
 sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 
 sudo usermod -aG docker $(whoami)
 echo Done. Please logout then log back in.
