@@ -1,11 +1,9 @@
 {
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
-    //"editor.fontSize": 12,
     "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "none",
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Solarized Light",
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "editor.minimap.enabled": false,
@@ -56,7 +54,7 @@
         "<C-w>": false,
         "<C-b>": false,
         "<C-a>": false,
-        "<C-h>": false,
+        "<C-h>": false
     },
     "files.exclude": {
         "**/node_modules": true
