@@ -52,3 +52,4 @@ Delete a Docker container: `docker rm TAG_OF_CONTAINER`
 
 ## Heroku
 Deploy from local branch to Heroku `git push heroku <branch_name>:main`
+Connecting via bash `heroku ps:exec /bin/bash`
