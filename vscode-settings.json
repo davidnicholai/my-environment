@@ -1,11 +1,12 @@
 {
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
-    //"editor.fontSize": 12,
-    "editor.lineNumbers": "relative",
+    // "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "none",
-    "editor.tabSize": 2,
-    "workbench.colorTheme": "Solarized Light",
+    // "editor.tabSize": 2,
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "editor.minimap.enabled": false,
@@ -56,15 +57,25 @@
         "<C-w>": false,
         "<C-b>": false,
         "<C-a>": false,
-        "<C-h>": false,
+        "<C-h>": false
     },
     "files.exclude": {
-        "**/node_modules": true
+        "**/node_modules": true,
+        "**/images/clothes": true,
+        "**/__pycache__": true
     },
     "editor.renderLineHighlight": "none",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "search.quickOpen.includeHistory": false,
-    "scm.diffDecorationsGutterVisibility": "hover"
+    "scm.diffDecorationsGutterVisibility": "hover",
+    "extensions.ignoreRecommendations": false,
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "Default Light+",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        // "--indent-strings=\"  \""
+    ]
 }
