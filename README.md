@@ -50,6 +50,23 @@ List running containers: `docker ps`
 
 Delete a Docker container: `docker rm TAG_OF_CONTAINER`
 
+## Pyenv Virtualenv
+
+To create a virtualenv
+
+`pyenv virtualenv 3.8.5 my-virtual-env-3.8.5`
+
+List all virtualenvs
+
+`pyenv virtualenvs`
+
+Activate or deactivate virtualenv
+
+```
+pyenv activate my-virtual-env-3.8.5
+```
+
+
 ## Heroku
 Deploy from local branch to Heroku `git push heroku <branch_name>:main`
 Connecting via bash `heroku ps:exec /bin/bash`
