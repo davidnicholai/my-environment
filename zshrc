@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="pygmalion"
+# ZSH_THEME="minimal"
+ZSH_THEME="nicoulaj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,3 +110,4 @@ alias dc="docker-compose $*"
 alias pyshell="docker-compose run web python manage.py shell"
 alias pybash="docker-compose run web /bin/bash"
 alias logs="docker-compose logs -f -t"
+alias runpycharm="cd ~/apps/pycharm-2020.2.3/bin && ./pycharm.sh"

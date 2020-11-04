@@ -3,7 +3,7 @@ set hlsearch
 set incsearch
 
 set ignorecase
-set relativenumber
+set number relativenumber
 
 let mapleader = "\<Space>"
 map <leader>f <C-f>
@@ -20,4 +20,6 @@ map <leader>4 $
 call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 call plug#end()
+
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 

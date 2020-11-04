@@ -65,12 +65,10 @@
     },
     "editor.renderLineHighlight": "none",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "search.quickOpen.includeHistory": false,
-    "scm.diffDecorationsGutterVisibility": "hover",
-    "extensions.ignoreRecommendations": false,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "GitHub Light",
-    "kite.showWelcomeNotificationOnStartup": false,
+    "editor.rulers": [
+        79
+    ],
+    "workbench.colorTheme": "Nord"
 }
