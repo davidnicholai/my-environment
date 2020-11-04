@@ -60,12 +60,17 @@ List all virtualenvs
 
 `pyenv virtualenvs`
 
-Activate or deactivate virtualenv
+Activate virtualenv
 
-```
-pyenv activate my-virtual-env-3.8.5
-```
+`pyenv activate my-virtual-env-3.8.5`
 
+To automatically load virtualenv in the Terminal, create a file `.python-version` in the root of the project, then the contents should be:
+
+`3.8.5`
+
+or
+
+`3.8.5/envs/<name_of_virtualenv>`
 
 ## Heroku
 Deploy from local branch to Heroku `git push heroku <branch_name>:main`
