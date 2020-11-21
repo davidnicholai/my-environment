@@ -111,3 +111,9 @@ alias pyshell="docker-compose run web python manage.py shell"
 alias pybash="docker-compose run web /bin/bash"
 alias logs="docker-compose logs -f -t"
 alias runpycharm="cd ~/apps/pycharm-2020.2.3/bin && ./pycharm.sh"
+
+if command -v synclient &> /dev/null
+then
+  synclient AreaLeftEdge=100
+  synclient AreaRightEdge=1130
+fi
