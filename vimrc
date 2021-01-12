@@ -22,4 +22,3 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
-

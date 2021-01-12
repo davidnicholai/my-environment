@@ -2,7 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-#Set up vim theme
+# Set up vim theme
 FILE=~/.vim/colors/solarized.vim
 if test -f "$FILE";
 then 
@@ -24,7 +24,7 @@ else
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-#Set up zsh and oh-my-zsh
+# Set up zsh and oh-my-zsh
 if ! type "zsh" > /dev/null 2>&1 ; then
 	echo oh-my-zsh is not installed. Let me do that for you.
 	sudo apt-get install zsh -y
@@ -58,4 +58,3 @@ source ~/.bashrc
 echo Sourced .bashrc
 
 echo Done! Run zsh or do a sudo reboot.
-
