@@ -21,4 +21,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+call plug#begin()
+  Plug 'preservim/nerdtree'
+call plug#end()
+
+map <leader><leader>f :NERDTreeFind<CR>
+map <leader><leader>t :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\~$']
+
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2

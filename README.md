@@ -33,6 +33,9 @@ To kill a process such as tmux
 Fix WARNING: UNPROTECTED PRIVATE KEY FILE
 `sudo chmod 600 ~/.ssh/id_rsa`
 
+To own the contents of a directory
+`sudo chown -R david:david .`
+
 Restart a service: `sudo systemctl [restart/stop/start] raspotify`
 
 Add SSH public key to remote server: `ssh-copy-id -i /path/to/file [user@]192.168.1.123`
@@ -75,3 +78,9 @@ or
 ## Heroku
 Deploy from local branch to Heroku `git push heroku <branch_name>:main`
 Connecting via bash `heroku ps:exec /bin/bash`
+
+## GNOME
+
+Alt+tab on active workspace only
+
+`gsettings set org.gnome.shell.app-switcher current-workspace-only true``
