@@ -1,7 +1,4 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "500",
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
     "editor.lineNumbers": "relative",
@@ -64,7 +61,6 @@
         "**/__pycache__": true
     },
     "editor.renderLineHighlight": "none",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "workbench.sideBar.location": "right",
     "search.quickOpen.includeHistory": false,
     "[dart]": {
