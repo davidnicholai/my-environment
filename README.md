@@ -40,6 +40,15 @@ Restart a service: `sudo systemctl [restart/stop/start] raspotify`
 
 Add SSH public key to remote server: `ssh-copy-id -i /path/to/file [user@]192.168.1.123`
 
+To mount a gpt image built from ddrescue:
+```
+losetup --partscan --find --show disk.img
+mount /dev/loop0p1 /mnt
+
+# to free it up, unmount then
+losetup -d /dev/loop0
+```
+
 ## Docker
 Check out the `Dockerfile` in this repository if you need a reference.
 
@@ -49,9 +58,17 @@ Run your image: `docker run [-p 80:80] [-d/--detach] TAG_OF_BUILT_DOCKER_IMAGE`
 
 Run command in image: `docker exec -it TAG_OF_BUILT_DOCKER_IMAGE bash`
 
-List running containers: `docker ps`
+List running containers: `docker ps [-a|--all]`
 
 Delete a Docker container: `docker rm TAG_OF_CONTAINER`
+
+Stop a container: `docker stop CONTAINER`
+
+Remove unused images: `docker image prune`
+
+List images: `docker image ls`
+
+Delete images: `docker image rm IMAGE_ID [IMAGE_IDS]`
 
 ## Pyenv Virtualenv
 

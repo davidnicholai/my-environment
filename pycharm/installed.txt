@@ -1,0 +1,4 @@
+AceJump
+IdeaVIM
+com.jetbrains.intellij.datalore
+org.jetbrains.IdeaVim-EasyMotion
