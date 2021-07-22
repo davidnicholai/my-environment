@@ -57,4 +57,6 @@ echo Sourced .inputrc
 source ~/.bashrc
 echo Sourced .bashrc
 
+gsettings set org.gnome.desktop.peripherals.keyboard delay 237
+
 echo Done! Run zsh or do a sudo reboot.
