@@ -1,0 +1,7 @@
+Dart
+IdeaVIM
+com.localizely.flutter-intl
+com.thoughtworks.gauge
+io.flutter
+org.intellij.plugins.markdown
+org.jetbrains.kotlin
