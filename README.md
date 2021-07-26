@@ -53,6 +53,11 @@ List running containers: `docker ps`
 
 Delete a Docker container: `docker rm TAG_OF_CONTAINER`
 
+Maybe you want to start a new Django project but want to do everything in Docker:
+```
+docker run -it --volume /home/yourusername/dev/my-python-project:/app python:3.9.6 /bin/bash
+```
+
 ## Pyenv Virtualenv
 
 To create a virtualenv
