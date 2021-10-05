@@ -11,6 +11,7 @@ export JAVA_HOME="$HOME/apps/android-studio/jre"
 # Pyenv path
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
 export PATH="$PATH:$HOME/apps/flutter/bin"
 
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -86,7 +87,6 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.bash_aliases
 
 # Aliases
 alias dev="cd ~/dev"
