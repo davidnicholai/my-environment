@@ -12,7 +12,3 @@ map <leader>p "0p
 map <leader>h :noh<CR>
 map <leader>d d$A
 map <leader>4 $
-
-call plug#begin('~/.vim/plugged')
-Plug 'sheerun/vim-polyglot'
-call plug#end()
