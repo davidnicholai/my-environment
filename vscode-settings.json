@@ -1,78 +1,91 @@
 {
-    "extensions.autoCheckUpdates": false,
-    "extensions.autoUpdate": false,
-    "editor.lineNumbers": "relative",
-    "editor.renderWhitespace": "none",
-    "vim.easymotion": true,
-    "vim.hlsearch": true,
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
-    "vim.leader": "<space>",
-    "vim.useSystemClipboard": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>","f"],
-            "after": ["<C-f>"]
-        },
-        {
-            "before": ["<leader>","b"],
-            "after": ["<C-b>"]
-        },
-        {
-            "before": ["<leader>","p"],
-            "after": ["\"", "0", "p"]
-        },
-        {
-            "before": ["<leader>","h"],
-            "after": [],
-            "commands": [
-                {
-                    "command": ":noh"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "d"],
-            "after": ["d", "$", "A"]
-        },
-        {
-            "before": ["<leader>", "4"],
-            "after": ["$"]
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-c>": false,
-        "<C-v>": false,
-        "<C-f>": false,
-        "<C-w>": false,
-        "<C-b>": false,
-        "<C-a>": false,
-        "<C-h>": false
-    },
-    "files.exclude": {
-        "**/node_modules": true,
-        "**/images/clothes": true,
-        "**/__pycache__": true
-    },
-    "editor.renderLineHighlight": "none",
-    "workbench.sideBar.location": "right",
-    "search.quickOpen.includeHistory": false,
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [
-            80
-        ],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+  // VS Code settings
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.guides.indentation": false,
+  "search.quickOpen.includeHistory": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/images/clothes": true,
+    "**/__pycache__": true
+  },
+
+  // Vim settings
+  "vim.easymotion": false,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
     }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "after": ["<C-f>"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["<C-b>"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "0", "p"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":noh"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "$", "A"]
+    }
+  ],
+  // "vim.handleKeys": {
+  //   "<C-c>": false,
+  //   "<C-v>": false,
+  //   "<C-f>": false,
+  //   "<C-w>": false,
+  //   "<C-b>": false,
+  //   "<C-a>": false,
+  //   "<C-h>": false
+  // },
+
+  // GitLens settings
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.views.commits.showBranchComparison": "branch",
+  "git.confirmSync": false,
+
+  // Dart settings
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  // Javascript settings
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
