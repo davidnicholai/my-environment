@@ -100,6 +100,7 @@ or
 ## Heroku
 Deploy from local branch to Heroku `git push heroku <branch_name>:main`
 Connecting via bash `heroku ps:exec /bin/bash`
+Connect local repo to Heroku `heroku git:remote -a <heroku_project>`
 
 ## GNOME
 
