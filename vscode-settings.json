@@ -1,43 +1,72 @@
 {
   // VS Code settings
   "editor.lineNumbers": "relative",
-  "editor.renderWhitespace": "none",
+  // "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
-  "editor.renderLineHighlight": "none",
+  // "editor.renderLineHighlight": "none",
   "editor.guides.indentation": false,
   "search.quickOpen.includeHistory": true,
   "files.exclude": {
-    "**/node_modules": true,
+    "**/__pycache__": true,
     "**/images/clothes": true,
-    "**/__pycache__": true
+    "**/static/dist": true,
+    "**/node_modules": true,
+    "**/.pub-cache": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
   },
-
+  "window.enableMenuBarMnemonics": false,
   // Vim settings
   "vim.easymotion": false,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "f"],
-      "after": ["<C-f>"]
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "after": [
+        "<C-f>"
+      ]
     },
     {
-      "before": ["<leader>", "b"],
-      "after": ["<C-b>"]
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "after": [
+        "<C-b>"
+      ]
     },
     {
-      "before": ["<leader>", "p"],
-      "after": ["\"", "0", "p"]
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "0",
+        "p"
+      ]
     },
     {
-      "before": ["<leader>", "h"],
+      "before": [
+        "<leader>",
+        "h"
+      ],
       "after": [],
       "commands": [
         {
@@ -46,46 +75,84 @@
       ]
     },
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "$", "A"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "$",
+        "A"
+      ]
     }
   ],
-  // "vim.handleKeys": {
-  //   "<C-c>": false,
-  //   "<C-v>": false,
-  //   "<C-f>": false,
-  //   "<C-w>": false,
-  //   "<C-b>": false,
-  //   "<C-a>": false,
-  //   "<C-h>": false
-  // },
-
-  // GitLens settings
-  "gitlens.currentLine.enabled": false,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "0",
+        "p"
+      ]
+    },
+  ],
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.enabled": false,
   "gitlens.views.commits.showBranchComparison": "branch",
   "git.confirmSync": false,
-
   // Dart settings
   "[dart]": {
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.rulers": [
+      80
+    ],
+    // "editor.selectionHighlight": false,
+    // "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // "editor.suggestSelection": "first",
+    // "editor.tabCompletion": "onlySnippets",
+    // "editor.wordBasedSuggestions": false,
+    // "editor.bracketPairColorization.enabled": true
   },
-
-  // Javascript settings
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.tabSize": 2,
-  "files.associations": {
-    "*.js": "javascriptreact"
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "dart": true
   },
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true
+  },
+  "python.languageServer": "Pylance",
+  "docker.dockerComposeBuild": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  // "editor.fontFamily": "'ComicCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.empty.hint": "hidden",
+  "dart.checkForSdkUpdates": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "none",
+  "python.analysis.typeCheckingMode": "standard",
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
