@@ -142,7 +142,7 @@
   "editor.inlineSuggest.enabled": true,
   // "editor.fontFamily": "'ComicCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.editor.empty.hint": "hidden",
   "dart.checkForSdkUpdates": false,
   "[typescriptreact]": {
@@ -154,5 +154,6 @@
   "python.analysis.typeCheckingMode": "standard",
   "git.openRepositoryInParentFolders": "never",
   "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "claudeCode.preferredLocation": "panel"
 }
