@@ -142,7 +142,7 @@
   "editor.inlineSuggest.enabled": true,
   // "editor.fontFamily": "'ComicCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.empty.hint": "hidden",
   "dart.checkForSdkUpdates": false,
   "[typescriptreact]": {

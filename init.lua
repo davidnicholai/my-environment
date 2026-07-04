@@ -32,3 +32,38 @@ vim.keymap.set("n", "<leader>d", "d$A", { remap = true })
 
 -- map <leader>4 $      (jump to end of line)
 vim.keymap.set(map_modes, "<leader>4", "$", { remap = true })
+
+-- Bootstrap lazy.nvim (plugin manager)
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.uv.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      -- macOS has no push notification for appearance changes in a TUI, so
+      -- re-check on focus (e.g. alt-tabbing back after the OS switches at
+      -- sunset/sunrise) rather than only once at startup.
+      local function sync_with_os()
+        local is_dark = vim.fn.system("defaults read -g AppleInterfaceStyle 2>/dev/null"):match("Dark") ~= nil
+        vim.o.background = is_dark and "dark" or "light"
+        require("catppuccin").setup({ flavour = is_dark and "mocha" or "latte" })
+        vim.cmd.colorscheme("catppuccin")
+      end
+      sync_with_os()
+      vim.api.nvim_create_autocmd("FocusGained", { callback = sync_with_os })
+    end,
+  },
+})
