@@ -1,3 +1,5 @@
+--
+vim.opt.clipboard = "unnamedplus"
 -- Leader key must be set before any mappings that use <leader>
 vim.g.mapleader = " "
 
@@ -48,6 +50,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "maxmx03/solarized.nvim", lazy = false, priority = 1000 },
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -56,11 +59,16 @@ require("lazy").setup({
       -- macOS has no push notification for appearance changes in a TUI, so
       -- re-check on focus (e.g. alt-tabbing back after the OS switches at
       -- sunset/sunrise) rather than only once at startup.
+      -- Dark: Catppuccin Mocha. Light: Solarized Light (matches kitty).
       local function sync_with_os()
         local is_dark = vim.fn.system("defaults read -g AppleInterfaceStyle 2>/dev/null"):match("Dark") ~= nil
         vim.o.background = is_dark and "dark" or "light"
-        require("catppuccin").setup({ flavour = is_dark and "mocha" or "latte" })
-        vim.cmd.colorscheme("catppuccin")
+        if is_dark then
+          require("catppuccin").setup({ flavour = "mocha" })
+          vim.cmd.colorscheme("catppuccin")
+        else
+          vim.cmd.colorscheme("solarized")
+        end
       end
       sync_with_os()
       vim.api.nvim_create_autocmd("FocusGained", { callback = sync_with_os })
